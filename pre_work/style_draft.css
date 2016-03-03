@@ -1,0 +1,147 @@
+.sky {
+  background-color: #12c7fd;
+  position: fixed;
+  width: 100%;
+  height: 85%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.gameTitle-container {
+  position: fixed;
+  width: 60%;
+  left: 20%;
+  height: 12%;
+  /*consider putting in a cool background?*/
+  /*top: 5%; dont need any spacing*/
+  /*background: green;*/
+  /*Setting the width of the div at 40%, 30% left, centers the div*/
+}
+#game-title {
+  font-size: 80px;
+  text-align: center;
+  font-family: fantasy;
+  /*add a cool google font*/
+  color: white;
+}
+.welcome-container{
+  position: fixed;
+  width: 60%;
+  left: 20%;
+  top: 15%;
+  /*background: purple;*/
+}
+#welcome-form{
+  text-align: center;
+}
+input {
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+input[type="Submit"] {
+	color: white;
+	background: #F55;
+  border-radius: 50%;
+  font-size: 20px;
+	}
+.sun {
+  position: fixed;
+  width: 125px;
+  height: 125px;
+  background-color: #ffff26;
+  left: 4%;
+  top: 5%;
+  border-radius: 100%;
+  z-index: -2;
+}
+.cloud-container{
+  position: fixed;
+  width: 40%;
+  height: 20%;
+  top: 25%;
+  left: 15%;
+  /*background: purple;*/
+}
+.left.fluff{
+  position: absolute;
+  width: 33.3%;
+  height: 100%;
+  left: 5%;
+  border-radius: 40%;
+  background: white;
+}
+.center.fluff{
+  position: absolute;
+  width: 33.3%;
+  height: 100%;
+  left: 33.3%;
+  border-radius: 40%;
+  background: white;
+}
+.right.fluff{
+  position: absolute;
+  width: 33.3%;
+  height: 100%;
+  left:61.6%;
+  border-radius: 40%;
+  background: white;
+}
+.donkey{
+  position: absolute;
+  top: 76%;
+  /*background: purple;*/
+}
+#donkey{
+  width: 150%;
+  height: 150%;
+}
+.ground {
+  position: fixed;
+  background-color: #028900;
+  width: 100%;
+  height: 15%;
+  left: 0;
+  top: 85%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  z-index: -1;
+}
+.flower-container{
+  position: fixed;
+  background-color: #6b4423;
+  width: 25%;
+  height: 10%;
+  left: 1%;
+  top: 87%;
+  border-radius: 15%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  z-index: 1;
+  color: yellow;
+  /*take color out and replace with flowers for each point*/
+}
+
+.house{
+  position: fixed;
+  /*float: right;*/
+  /*can only use float right if use relative*/
+  height: 40%;
+  width: 35%;
+  top: 50%;
+  left: 65%;
+  background: url(brick.gif) repeat;
+}
+
+
+/*changes for half screen*/
+@media screen
+  and (max-width : 700px) {
+  #game-title{
+    font-size: 50px;
+  }
+}
