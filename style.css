@@ -36,6 +36,12 @@
 #welcome-form {
   text-align: center;
 }
+.greetings{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: fantasy;
+}
 input {
   font-size: 20px;
   text-align: center;
@@ -56,6 +62,13 @@ input[type="Submit"] {
   top: 5%;
   border-radius: 100%;
   z-index: -2;
+}
+.sun-text{
+  position: relative;
+  font-size: 20px;
+  font-family: fantasy;
+  top: 52.5px;
+  text-align: center;
 }
 .cloud-container {
   position: fixed;
