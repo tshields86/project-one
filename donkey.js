@@ -24,3 +24,7 @@ var donkeyStart = function() {
     }
   }, 20);
 };
+
+cave.addEventListener('click', function(){
+  donkeyStart();
+});

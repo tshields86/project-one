@@ -30,3 +30,4 @@ sun.addEventListener('click', function (){
     sunScript.innerText = "Check out the cave...";
   }
 });
+//when click sun have the id and class reset for frd

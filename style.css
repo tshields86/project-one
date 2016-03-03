@@ -44,6 +44,7 @@
 }
 input {
   font-size: 20px;
+  font-family: fantasy;
   text-align: center;
   border-radius: 50%;
 }
@@ -62,6 +63,10 @@ input[type="Submit"] {
   top: 5%;
   border-radius: 100%;
   z-index: -2;
+}
+.sun:hover{
+  border: dotted #f27d0c;
+  cursor: pointer;
 }
 .sun-text{
   position: relative;
@@ -86,6 +91,67 @@ input[type="Submit"] {
   border-radius: 40%;
   background: white;
 }
+#fire{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+}
+#fire:hover{
+  cursor: pointer;
+}
+#rain{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+#rain:hover{
+  cursor: pointer;
+}
+#duck{
+  position: relative;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 20%;
+}
+#duck:hover{
+  cursor: pointer;
+}
+.left.fluff.playerPick{
+  border: 3px solid blue;
+  z-index: 10;
+  /*background-color: black;*/
+}
+.center.fluff.playerPick{
+  border: 3px solid blue;
+  z-index: 10;
+  /*background-color: black;*/
+}
+.right.fluff.playerPick{
+  border: 3px solid blue;
+  z-index: 10;
+  /*background-color: black;*/
+}
+.left.fluff.compPick{
+  border: 3px solid red;
+  z-index: 8;
+  /*background-color: black;*/
+}
+.center.fluff.compPick{
+  border: 3px solid red;
+  z-index: 8;
+  /*background-color: black;*/
+}
+.right.fluff.compPick{
+  border: 3px solid red;
+  z-index: 8;
+  /*background-color: black;*/
+}
 .center.fluff {
   position: absolute;
   width: 33.3%;
@@ -102,6 +168,12 @@ input[type="Submit"] {
   border-radius: 40%;
   background: white;
 }
+#tie{
+  background: yellow;
+}
+#win{
+  background: green;
+}
 .donkey {
   position: absolute;
   top: 76%;
@@ -113,7 +185,9 @@ input[type="Submit"] {
 #donkey {
   width: 160px;
   height: 150px;
-
+}
+#donkey:hover{
+  cursor: url(images/rope.png), auto;
 }
 .cave{
   position: absolute;
@@ -124,6 +198,9 @@ input[type="Submit"] {
 #cave{
   width: 210px;
   height: 210px;
+}
+#cave:hover{
+  cursor: pointer;
 }
 .ground {
   position: fixed;
