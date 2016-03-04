@@ -23,9 +23,10 @@ sun.addEventListener('click', function (){
   var spin = Math.floor(Math.random() * 3 + 1);
   console.log(spin);
   if (spin == 1){
-    sunScript.innerText = "Visit the cloud...";
+    sunScript.innerText = "Float in the clouds...";
   } else if (spin == 2){
-    sunScript.innerText = "Chalk the wall...";
+    sunScript.innerText = "Chalk to the wall...";
+    startTic();
   } else {
     sunScript.innerText = "Check out the cave...";
   }

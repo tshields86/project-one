@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Travis-Land</title>
+    <title>TravisLand</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sigmar+One|Permanent+Marker|Amatic+SC:700">
   </head>
   <body>
 <!-- ========================sky=============== -->
@@ -13,7 +14,7 @@
         <!-- add spinner or add a word that says hit me and add event listener -->
       </div>
       <div class="gameTitle-container">
-        <div id="game-title">Travis-Land</div>
+        <div id="game-title">TravisLand</div>
       </div>
       <div class="welcome-container">
         <form id="welcome-form">
@@ -29,10 +30,39 @@
       <div class="donkey"><img src="images/donkey2.gif" id="donkey" alt="donkeyPic" /></div>
       <div class="cave"><img src="images/cave2.png" id="cave" alt="cavePic" /></div>
       <div class="roof"></div>
-      <div class="house">
-<!-- house contents -->
+      <div class="wall">
+        <div class="box rTop cLeft">
+          <div class="tile" id="one">?</div>
+        </div>
+        <div class="box rTop cMid">
+          <div class="tile" id="two">?</div>
+        </div>
+        <div class="box rTop cRight">
+          <div class="tile" id="three">?</div>
+        </div>
+        <div class="box rMid cLeft">
+          <div class="tile" id="four">?</div>
+        </div>
+        <div class="box rMid cMid">
+          <div class="tile" id="five">?</div>
+        </div>
+        <div class="box rMid cRight">
+          <div class="tile" id="six">?</div>
+        </div>
+        <div class="box rBot cLeft">
+          <div class="tile" id="seven">?</div>
+        </div>
+        <div class="box rBot cMid">
+          <div class="tile" id="eight">?</div>
+        </div>
+        <div class="box rBot cRight">
+          <div class="tile" id="nine">?</div>
+        </div>
 
         <!-- house contents -->
+      </div>
+      <div class="eraser">
+        <img src="images/eraser.gif" id="eraser" alt="eraser" />
       </div>
     </div>
 <!-- ===================ground================= -->
@@ -46,7 +76,7 @@
 <!-- ====================JavaScript================== -->
 <script type="text/javascript" src="app.js"></script>
 <script type="text/javascript" src="frd.js"></script>
-<script type="text/javascript" src=""></script>
+<script type="text/javascript" src="tic-tac-toe.js"></script>
 <script type="text/javascript" src="donkey.js"></script>
 <script type="text/javascript" src=""></script>
   </body>

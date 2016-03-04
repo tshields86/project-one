@@ -1,3 +1,6 @@
+body{
+  font-family: 'Permanent Marker', fantasy;
+}
 .sky {
   background-color: #12c7fd;
   position: fixed;
@@ -22,8 +25,7 @@
 #game-title {
   font-size: 80px;
   text-align: center;
-  font-family: fantasy;
-  /*add a cool google font*/
+  font-family: 'Sigmar One', fantasy;
   color: white;
 }
 .welcome-container {
@@ -40,19 +42,20 @@
   text-align: center;
   font-size: 30px;
   color: white;
-  font-family: fantasy;
+  font-family: 'Amatic SC', fantasy;
 }
 input {
-  font-size: 20px;
-  font-family: fantasy;
+  font-size: 30px;
+  font-family: 'Amatic SC', fantasy;
   text-align: center;
   border-radius: 50%;
+  border: 2px solid #F55;
 }
 input[type="Submit"] {
 	color: white;
 	background: #F55;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 30px;
 	}
 .sun {
   position: fixed;
@@ -71,7 +74,7 @@ input[type="Submit"] {
 .sun-text{
   position: relative;
   font-size: 20px;
-  font-family: fantasy;
+  font-family: 'Amatic SC', fantasy;
   top: 52.5px;
   text-align: center;
 }
@@ -229,7 +232,7 @@ input[type="Submit"] {
   color: yellow;
   /*take color out and replace with flowers for each point*/
 }
-.house {
+.wall {
   position: fixed;
   /*float: right;*/
   /*can only use float right if use relative*/
@@ -241,7 +244,64 @@ input[type="Submit"] {
   z-index: -5;
 }
 
+.box{
+  position:absolute;
+  height: 26.6%;
+  width: 26.6%;
+  color: #444444;
+  font-family: Squeaky, fantasy;
+  font-size: 40px;
+}
+.rTop{
+  top: 10%;
+  border-bottom: 7px solid #f5f5f5;
+}
+.rMid{
+  top: 36.6%;
+  border-bottom: 7px solid #f5f5f5;
+}
+.rBot{
+  top: 63.2%;
+}
+.cLeft{
+  left: 10%;
+  border-right: 7px solid #f5f5f5;
+}
+.cMid{
+  left: 36.6%;
+  border-right: 7px solid #f5f5f5;
+}
+.cRight{
+  left: 63.2%;
+}
+.tile {
+  position: relative;
+  top: 15%;
+  left: 38%;
+  /*background: green;*/
+}
+.tile:hover {
+  cursor: pointer;
+}
+.eraser{
+  position: absolute;
+  top: 96.5%;
+  left: 91.5%;
+}
+/*#eraser{
+  width: 100%;
+  height: 100%;
+}*/
+#eraser:hover{
+  cursor: pointer;
+}
 
+
+
+@font-face {
+        font-family: Squeaky;
+        src: url(SqueakyChalkSound.ttf);
+}
 /*changes for half screen*/
 @media screen
   and (max-width : 700px) {

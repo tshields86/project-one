@@ -8,22 +8,27 @@ var donkeyStart = function() {
     donkeyHouse.style.left = left + "px";
     if (direction == "right") {
       if (left <= window.innerWidth - 460) {
-          left += 5;
+          left += 4;
       } else {
         direction = "left";
         donkeyHouse.className = "donkey left";
       }
     } else {
       if (left >= 0) {
-          left -= 5;
+          left -= 4;
       } else {
         direction = "right";
         donkeyHouse.className = "donkey right";
         clearInterval(runRight);
       }
     }
-  }, 20);
+  }, 10);
+  //lasso that donkey!
+  donkeyHouse.addEventListener('click', function(){
+    console.log("You got em!");
+  });
 };
+
 
 cave.addEventListener('click', function(){
   donkeyStart();
