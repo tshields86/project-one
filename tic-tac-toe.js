@@ -39,13 +39,15 @@ var startTic = function () {
     box.addEventListener('click', function(){
       // console.log('woah');
       if (turn === 0) {
-          box.innerText = user;
-          // boxCheck();
-          // checkWin();
-        } else if (turn === 1){
-          // compMove();
-          // boxCheck();
-          // checkWin();
+        box.innerText = user;
+        boxCheck();
+        // checkWin();
+        turn = 1;
+        // console.log('turn: ' + turn);
+        botMove();
+        boxCheck();
+        // checkWin();
+        // console.log('turn: ' + turn);
       }
     });
   });
@@ -79,7 +81,84 @@ var boxCheck = function(){
   });
 };
 
-  
+var botMove = function (){
+// add and if else if above the content below, if robot has two in a row should have top preference
+
+    if (currentBox[0] == '?' && ((currentBox[1] == user && currentBox[2] == user)||(currentBox[3] == user && currentBox[6] == user)||(currentBox[4] == user && currentBox[8] == user)) ){
+      ticArray[0].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[2] == '?' && ((currentBox[0] == user && currentBox[1] == user)||(currentBox[5] == user && currentBox[8] == user)||(currentBox[4] == user && currentBox[6] == user)) ){
+      ticArray[2].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[6] == '?' && ((currentBox[0] == user && currentBox[3] == user)||(currentBox[7] == user && currentBox[8] == user)||(currentBox[2] == user && currentBox[4] == user)) ){
+      ticArray[6].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[8] == '?' && ((currentBox[2] == user && currentBox[5] == user)||(currentBox[6] == user && currentBox[7] == user)||(currentBox[0] == user && currentBox[4] == user)) ){
+      ticArray[8].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[1] == '?' && ((currentBox[0] == user && currentBox[2] == user)||(currentBox[4] == user && currentBox[7] == user)) ){
+      ticArray[1].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[3] == '?' && ((currentBox[0] == user && currentBox[6] == user)||(currentBox[4] == user && currentBox[5] == user)) ){
+      ticArray[3].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[5] == '?' && ((currentBox[2] == user && currentBox[8] == user)||(currentBox[3] == user && currentBox[4] == user)) ){
+      ticArray[5].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[7] == '?' && ((currentBox[1] == user && currentBox[4] == user)||(currentBox[6] == user && currentBox[8] == user)) ){
+      ticArray[7].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else if (currentBox[4] == '?' && ((currentBox[1] == user && currentBox[7] == user)||(currentBox[3] == user && currentBox[5] == user)||(currentBox[0] == user && currentBox[8] == user)||(currentBox[2] == user && currentBox[6] == user)) ){
+      ticArray[4].innerText = robot;
+      // console.log('check');
+      turn = 0;
+    } else {
+      var randomPick = Math.floor(Math.random() * 9 + 1);
+      if (randomPick == 1 && currentBox[0] == '?') {
+        ticArray[0].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 2 && currentBox[1] == '?') {
+        ticArray[1].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 3 && currentBox[2] == '?') {
+        ticArray[2].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 4 && currentBox[3] == '?') {
+        ticArray[3].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 5 && currentBox[4] == '?') {
+        ticArray[4].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 6 && currentBox[5] == '?') {
+        ticArray[5].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 7 && currentBox[6] == '?') {
+        ticArray[6].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 8 && currentBox[7] == '?') {
+        ticArray[7].innerText = robot;
+        turn = 0;
+      } else if (randomPick == 9 && currentBox[8] == '?') {
+        ticArray[8].innerText = robot;
+        turn = 0;
+      }
+    }
+};
+
+
+  // else if (currentBox[5] == '?'){
+  //   ticArray[5].innerText = "O";
+  //   // console.log('check');
+  //   turn = 0;
+  // }
 
 
 // one.addEventListener('click', function(){
