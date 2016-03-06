@@ -177,10 +177,21 @@ input[type="Submit"] {
 #win{
   background: green;
 }
+.direction-container{
+  position: fixed;
+  width: 25%;
+  height: 35%;
+  top: 12.5%;
+  left: 75%;
+  color: white;
+  /*background: green;*/
+  text-align: center;
+}
 .donkey {
   position: absolute;
   top: 76%;
   /*background: purple;*/
+  /*z-index: 100;*/
 }
 .donkey.left {
   transform: scaleX(-1);
@@ -281,7 +292,8 @@ input[type="Submit"] {
   /*background: green;*/
 }
 .tile:hover {
-  cursor: pointer;
+  cursor: url(images/chalk.gif), auto;
+  /*cursor: pointer;*/
 }
 .eraser{
   position: absolute;

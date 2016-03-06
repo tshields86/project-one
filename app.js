@@ -26,6 +26,12 @@ sun.addEventListener('click', function (){
     sunScript.innerText = "Float in the clouds...";
   } else if (spin == 2){
     sunScript.innerText = "Chalk to the wall...";
+    ticArray.forEach(function(box){
+        box.innerText = "?";
+      });
+      userWin = false;
+      robotWin = false;
+      tie = false;
     startTic();
   } else {
     sunScript.innerText = "Check out the cave...";
