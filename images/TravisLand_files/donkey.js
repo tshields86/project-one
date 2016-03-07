@@ -24,19 +24,12 @@ var donkeyStart = function() {
     }
   }, 10);
   //lasso that donkey!
-  donkeyHouse.addEventListener('click', growFlower);
-  // donkeyHouse.addEventListener('click', function(){
-  //   // console.log("You got em!");
-  //   growFlower();
-  // });
+  donkeyHouse.addEventListener('click', function(){
+    console.log("You got em!");
+  });
 };
 
 
 cave.addEventListener('click', function(){
-
   donkeyStart();
 });
-
-var flowerG = function (){
-  growFlower();
-};

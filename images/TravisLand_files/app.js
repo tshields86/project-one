@@ -24,10 +24,8 @@ sun.addEventListener('click', function (){
   console.log(spin);
   if (spin == 1){
     sunScript.innerText = "Float in the clouds...";
-    directions.innerText = "Play the game of Fire, Rain, Duck! Go ahead, choose one, your pick will be outlined in blue, my pick will be outlined in red. The winner of the round will be highlighted in green, yellow means there was a tie. Good luck!";
   } else if (spin == 2){
     sunScript.innerText = "Chalk to the wall...";
-    directions.innerText = "Grab a piece of chalk and see if you can beat me in a game of Tic-Tac-Toe. Feel free to use my eraser at the end of the game!";
     ticArray.forEach(function(box){
         box.innerText = "?";
       });
@@ -37,16 +35,8 @@ sun.addEventListener('click', function (){
     startTic();
   } else {
     sunScript.innerText = "Check out the cave...";
-    directions.innerText = "I need your help! My pet has escaped and is hiding... take my lasso and see if you can round him up!";
   }
 });
-
-var directions = document.querySelector('p');
-
-
-
-
-
 //when click sun have the id and class reset for frd
 // ===============garden===================
 var flowerContainer = document.querySelector('.flower-container');
@@ -73,11 +63,6 @@ winFlower.appendChild(winFlowerImage);
 flowerContainer.appendChild(winFlower);
 };
 
-var removeFlower = function (){
-  var lastChild = flowerContainer.lastChild;
-  // console.log(lastChild);
-  flowerContainer.removeChild(lastChild);
-};
 
 
 

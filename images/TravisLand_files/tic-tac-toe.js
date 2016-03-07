@@ -290,11 +290,9 @@ var resultAlert = function(){
   if (userWin === true){
     console.log("User wins");
     endTic();
-    growFlower();
   } else if (robotWin === true){
     console.log("Robot wins");
     endTic();
-    removeFlower();
   } else if (tie === true){
     console.log("It's a tie");
     endTic();
