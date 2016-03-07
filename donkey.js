@@ -36,7 +36,3 @@ cave.addEventListener('click', function(){
 
   donkeyStart();
 });
-
-var flowerG = function (){
-  growFlower();
-};
