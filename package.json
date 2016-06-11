@@ -1,0 +1,23 @@
+{
+  "name": "travisland",
+  "version": "1.0.0",
+  "description": "General Assembly Web Development Immersive Game Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tshields86/travisland.git"
+  },
+  "author": "Travis Shields",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tshields86/travisland/issues"
+  },
+  "homepage": "https://github.com/tshields86/travisland#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
